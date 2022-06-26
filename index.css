@@ -9,7 +9,7 @@ body {
 .container {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
 }
 
 .sidebar {
@@ -71,9 +71,9 @@ ul {
 
 .projects {
   display: grid;
-  grid-template-rows: auto 2fr 2fr 2fr;
+  grid-template-rows: auto 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem 1em;
+  gap: 2rem 1em;
 }
 
 .projects h3 {
@@ -83,8 +83,72 @@ ul {
 }
 
 .project {
-  border: 1px solid;
+  display: grid;
   background-color: #ffffff;
   text-align: left;
   padding-left: 2em;
+  padding-right: 2em;
+  box-shadow: 1px 1px 2px gray;
+  border-radius: 1em;
+  grid-template-rows: 4fr 1fr;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  height: 2em;
+  gap: 1em;
+}
+
+.announcements {
+  display: grid;
+  grid-template-rows: auto 2fr;
+  grid-template-columns: 1fr;
+  border-radius: 5px;
+}
+
+.announces {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px gray;
+}
+
+.announcements h5 {
+  grid-column: 1/-1;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.announcement {
+  text-align: left;
+  padding: 0.5em;
+  border-bottom: 1px solid gray;
+  margin: 1em;
+}
+
+.announcement:last-child {
+  border: none;
+}
+
+.trends {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px gray;
+  padding: 1rem 2em;
+}
+
+
+.trend {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 1rem;
+}
+
+.trend img {
+  height: 3rem;
+  width: 3rem;
 }
