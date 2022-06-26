@@ -57,7 +57,39 @@ ul {
 }
 
 .header {
+  display: grid;
   padding: 10px;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 3fr 1fr;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding-right: 2rem;
+}
+
+.search-bar .search-input {
+  flex: 1;
+  border-style: none;
+  background-color: rgb(217, 217, 214);
+  border-radius: 20px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile img {
+  height: 2rem;
+}
+
+.profile img:nth-child(2) {
+  border-radius: 50%;
+  border: 1px solid;
 }
 
 .content {
@@ -151,4 +183,6 @@ ul {
 .trend img {
   height: 3rem;
   width: 3rem;
+  border-radius: 50%;
+  border: 1px solid;
 }
